@@ -18,7 +18,7 @@ class NoteViewModel(application: Application): AndroidViewModel(application) {
         val dao = NoteDataBase.getDataBase(application).getNotesDao()
         repository = NotesRepository(dao)
         allNotes = repository.allNotes
-        Log.v("Eхехе","охохо")
+        Log.v("Eхехе","охохо123")
     }
 
     fun deleteNote(noteModel: NoteModel) = viewModelScope.launch(Dispatchers.IO) {
