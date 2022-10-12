@@ -2,6 +2,7 @@ package com.guahoo.notesplus
 
 import android.app.Application
 import android.provider.ContactsContract.CommonDataKinds.Note
+import android.util.Log
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
@@ -17,6 +18,7 @@ class NoteViewModel(application: Application): AndroidViewModel(application) {
         val dao = NoteDataBase.getDataBase(application).getNotesDao()
         repository = NotesRepository(dao)
         allNotes = repository.allNotes
+        Log.v("Eхехе","охохо")
     }
 
     fun deleteNote(noteModel: NoteModel) = viewModelScope.launch(Dispatchers.IO) {
