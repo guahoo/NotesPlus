@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp"
+    android:layout_margin="5dp"
+    app:cardBackgroundColor="@color/black_shade_2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note Title"
+        android:textSize="18sp"
+        android:padding="4dp"
+        android:layout_alignParentTop="true"
+        android:layout_margin="4dp"
+        android:layout_toStartOf="@id/idIVDelete"
+        android:textColor="@color/white"
+        android:id="@+id/idTvNoteTitle"
+        android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:layout_below="@id/idTvNoteTitle"
+            android:id="@+id/idNoteTimeStamp"
+            android:layout_toStartOf="@id/idIVDelete"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:text="11 oct 2022"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/idIVDelete"
+            android:padding="4dp"
+            android:layout_margin="4dp"
+            android:src="@drawable/ic_baseline_delete_24"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"/>
+
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>
